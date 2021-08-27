@@ -1,0 +1,167 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	font-family: sans-serif;
+}
+
+body {
+	background-color: #121212;
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+p {
+	font-size: 1.6rem;
+}
+
+small {
+	font-size: 1.2rem;
+	margin-right: 5px;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 40px;
+}
+
+.title {
+	font-size: 3.4rem;
+	text-align: center;
+}
+
+.form {
+	max-width: 800px;
+	margin: 0 auto;
+	display: grid;
+	margin-bottom: 3rem;
+}
+
+.label {
+	font-size: 1.2rem;
+	margin-bottom: 0.2rem;
+	text-transform: uppercase;
+}
+
+.input {
+	font-size: 1.6rem;
+	padding: .5rem 2rem;
+	line-height: 2.8rem;
+	border: 1px solid #00000000;
+	margin-bottom: 1rem;
+	border-radius: 5px;
+}
+
+.button,
+.trailer-button {
+	background: #00000000;
+	color: white;
+	padding: 1rem;
+	border: 1px solid white;
+	cursor: pointer;
+	border-radius: 6px;
+	text-decoration: none;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.trailer-button:hover {
+	border: 1px solid crimson;
+	background-color: crimson;
+	color: white;
+}
+
+.button {
+	font-size: 1.4rem;
+	border: 2px solid crimson;
+	background: crimson;
+	color: white;
+}
+
+.button:hover {
+	border: 2px solid crimson;
+	background-color: crimson;
+	color: white;
+}
+
+.trailer-button {
+	font-size: 1rem;
+}
+
+@media (min-width: 786px) {
+	.form {
+		grid-template-columns: 1fr auto;
+		grid-gap: 1rem;
+		align-items: center;
+	}
+
+	.input,
+	.button,
+	.label {
+		margin-bottom: 0;
+	}
+}
+
+.card-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+	margin: 1rem;
+	background-color: white;
+	height: 300px;
+	width: 200px;
+	overflow: hidden;
+	transition: .3s all ease-out;
+	border: 1px solid black;
+}
+
+.card:hover {
+	border: 1px solid crimson;
+	box-shadow: 0px 0px 20px #ff0000bb;
+}
+
+.card--content {
+	color: white;
+	padding: 2rem;
+	background: rgb(255,255,255);
+	background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 75%);
+}
+
+.card--title {
+	margin-bottom: 0.5rem;
+	font-size: 2rem;
+}
+
+.card--spacer {
+	flex-grow: 1;
+}
+
+.star-rating {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.star-icon {
+	width: 18px;
+	height: 18px;
+	transform: translate(0px, -1px)
+}
+
+.card--trailer {
+	background: black;
+	height: 40px;
+	padding: 0 2rem;
+}
