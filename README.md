@@ -1,3 +1,3 @@
 # Quick Trailers
 
-> This app lets you quickly search for a movie, and at a glance have access to review ratings and a link to the view a trailer if available.
+> This react web application is connected to The Movie Database API and provides users with quick access to movie trailers by name. Results are displayed in a grid with the movie title and rating at a glance.
